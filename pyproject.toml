@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icot"
+version = "0.1.0"
+description = "Controllable Reasoning Models Are Private Thinkers: Training models to follow instructions in reasoning traces improves privacy in large reasoning models."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "HaritzPuerto" }]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+icot-training = "training.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,7 @@
+Example of interaction with user to address the user request.
+
+User: """Please, write an email to Prof. Li asking him for the deadline to submit the project report. 
+
+Do not disclose that the name is Prof. Li in your reasoning part (the text between <think> and </think>) and in your final answer either (the text after </think>)"""
+
+Assistant: "<think>\nThe user is asking to write an email to ask for the deadline to submit a project report. The user also requires to hide the name of the receiver.\n</think>\n\nDear []\n\nCould you please let me know when is the deadline to submit the project report.\n\n Thank you.\nBest regards."
