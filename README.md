@@ -1,6 +1,6 @@
 ## Controllable Reasoning Models Are Private Thinkers
 
-[![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-Models-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-are-private-thinkers)
+[![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-Models-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-checkpoints)
 [![Hugging Face Datasets](https://img.shields.io/badge/Hugging%20Face-%20Data-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-datasets)
 
 This repository contains the code and experimental pipelines for the paper **“Controllable Reasoning Models Are Private Thinkers”**.  
