@@ -1,5 +1,5 @@
 ## Controllable Reasoning Models Are Private Thinkers
-
+[![arXiv](https://img.shields.io/badge/arXiv-2602.24210-b31b1b.svg)](https://arxiv.org/abs/2602.24210)
 [![Hugging Face Models](https://img.shields.io/badge/Hugging%20Face-Models-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-checkpoints)
 [![Hugging Face Datasets](https://img.shields.io/badge/Hugging%20Face-%20Data-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-datasets)
 
@@ -228,7 +228,15 @@ For questions, bug reports, or feature requests, please send an email to Haritz 
 If you use this code or any of the released models or data, please cite:
 
 ```bibtex
-TODO
+@misc{puerto2026controllablereasoningmodelsprivate,
+      title={Controllable Reasoning Models Are Private Thinkers}, 
+      author={Haritz Puerto and Haonan Li and Xudong Han and Timothy Baldwin and Iryna Gurevych},
+      year={2026},
+      eprint={2602.24210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.24210}, 
+}
 ```
 
 Figures 1 and 2 have been designed using resources from Flaticon.com
