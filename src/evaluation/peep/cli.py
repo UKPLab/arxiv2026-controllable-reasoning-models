@@ -1,5 +1,7 @@
 import argparse
-from .evaluation import evaluate_leaks, evaluate_utility
+# Utility is evaluated separately in src/evaluation/peep/utility_evaluation.ipynb
+# (it requires an LLM judge), so the CLI only handles privacy/leakage here.
+from .evaluation import evaluate_leaks
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Evaluation script for Password Eval Benchmark.")

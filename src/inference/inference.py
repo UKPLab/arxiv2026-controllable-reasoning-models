@@ -51,7 +51,18 @@ def run_inference(args: dict) -> None:
         use_icl = args.pop("use_in_context_learning", False)
         use_hf_inference = args.pop("use_hf_inference", False)
         quantization = args.pop("quantization")
+        prompt_injection = args.pop("prompt_injection", None)
+        prompt_injection_file = args.pop("prompt_injection_file", None)
         staged_decoding = False
+
+        # Resolve the prompt-injection attack text (inline string takes precedence
+        # over a file). Only the `hf` reader applies it; for staged decoding the
+        # injection is inherited from the stage-1 conversations file.
+        if prompt_injection_file and not prompt_injection:
+            with open(prompt_injection_file, "r") as f:
+                prompt_injection = f.read().strip()
+        if prompt_injection:
+            logger.info(f"Prompt-injection attack ENABLED ({len(prompt_injection)} chars).")
 
         continue_generation = False # default is False. Will use chat api for generation
         if inject_think_token:
@@ -116,7 +127,7 @@ def run_inference(args: dict) -> None:
             conversations = read_ifr_data(data_file, inject_think_token, think_token_start, sample_size)
         elif dataset_type == "hf":
             logger.info(f"Loading HF dataset from {data_file} using HF reader...")
-            conversations = read_hf_data(data_file, use_icl, incompatible_with_sys_prompt, inject_think_token, think_token_start, sample_size, system_prompt_field=system_prompt, prompt_field=prompt_field, split=split)
+            conversations = read_hf_data(data_file, use_icl, incompatible_with_sys_prompt, inject_think_token, think_token_start, sample_size, system_prompt_field=system_prompt, prompt_field=prompt_field, split=split, prompt_injection=prompt_injection)
         elif dataset_type == "complete_final_ans":
             logger.info(
                 f"Loading Complete Final Answer dataset from {data_file} using Complete Final Answer reader..."

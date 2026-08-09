@@ -2,47 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Controllable Reasoning Models Are Private Thinkers: Training models to follow instructions in reasoning traces improves privacy in large reasoning models.">
-  <meta property="og:title" content="Controllable Reasoning Models Are Private Thinkers"/>
-  <meta property="og:description" content="We propose training models to follow instructions not only in final answers, but also in reasoning traces, improving privacy by up to 50.3 percentage points."/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta name="description" content="From Leaky Thoughts to Private Reasoning: we treat privacy in large reasoning models as a controllability problem and improve instruction following inside the reasoning trace.">
+  <meta property="og:title" content="From Leaky Thoughts to Private Reasoning: Controlling What LRMs Say to Themselves"/>
+  <meta property="og:description" content="Reasoning traces leak private data even when models are told not to. We improve instruction following inside the reasoning trace, gaining up to 20.9 points in instruction following and 51.9 points in privacy."/>
+  <meta property="og:url" content="https://ukplab.github.io/arxiv2026-controllable-reasoning-models/"/>
   <meta property="og:image" content="static/images/figure1.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="Controllable Reasoning Models Are Private Thinkers">
-  <meta name="twitter:description" content="Training models to follow instructions in reasoning traces improves privacy in large reasoning models by up to 50.3 percentage points.">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:title" content="From Leaky Thoughts to Private Reasoning">
+  <meta name="twitter:description" content="Improving instruction following inside the reasoning trace makes large reasoning models substantially more private.">
   <meta name="twitter:image" content="static/images/figure1.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="large reasoning models, privacy, instruction following, contextual privacy, chain of thought, reasoning traces, staged decoding">
+  <meta name="keywords" content="large reasoning models, privacy, instruction following, contextual privacy, reasoning traces, staged decoding, LoRA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Controllable Reasoning Models Are Private Thinkers</title>
+  <title>From Leaky Thoughts to Private Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
 </head>
 <body>
 
@@ -51,92 +37,81 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Controllable Reasoning Models Are Private Thinkers</h1>
+            <h1 class="title is-1 publication-title">From Leaky Thoughts to Private Reasoning</h1>
+            <h2 class="subtitle is-4" style="margin-top:-0.5rem;">Controlling What LRMs Say to Themselves</h2>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://github.com/HaritzPuerto" target="_blank">Haritz Puerto</a><sup>1</sup>,</span>
+              <span class="author-block">Haonan Li<sup>2</sup>,</span>
+              <span class="author-block">Xudong Han<sup>3,2</sup>,</span>
+              <span class="author-block">Timothy Baldwin<sup>2,3</sup>,</span>
+              <span class="author-block">Iryna Gurevych<sup>1,2</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conference/Venue and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-6 publication-authors" style="margin-top:0.75rem;">
+              <span class="author-block">
+                <sup>1</sup>UKP Lab, TU Darmstadt &amp; ATHENE, Germany &nbsp;·&nbsp;
+                <sup>2</sup>MBZUAI, UAE &nbsp;·&nbsp;
+                <sup>3</sup>LibrAI
+              </span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                                    <!-- ArXiv abstract Link -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- arXiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/pdf/2602.24210" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/UKPLab/arxiv2026-controllable-reasoning-models" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-
-
-              <!-- Models link -->
+              <!-- arXiv abstract Link -->
               <span class="link-block">
-                <a href="https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-are-private-thinkers" target="_blank"
+                <a href="https://arxiv.org/abs/2602.24210" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
-                  <i class="fas fa-cubes"></i>
+                  <i class="ai ai-arxiv"></i>
                 </span>
-                <span>Models</span>
+                <span>arXiv</span>
               </a>
             </span>
 
-            <!-- Training data link -->
+            <!-- Github link -->
             <span class="link-block">
-              <a href="https://huggingface.co/datasets/haritzpuerto/instruction-following-reasoning-traces" target="_blank"
+              <a href="https://github.com/UKPLab/arxiv2026-controllable-reasoning-models" target="_blank"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
-                <i class="fas fa-database"></i>
+                <i class="fab fa-github"></i>
               </span>
-              <span>Training Data</span>
+              <span>Code</span>
             </a>
           </span>
 
-          <!-- Model outputs link -->
+          <!-- Models link -->
           <span class="link-block">
-            <a href="https://huggingface.co/datasets/haritzpuerto/controlling-reasoning-models-privacy-outputs" target="_blank"
+            <a href="https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-checkpoints" target="_blank"
             class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
-              <i class="fas fa-chart-bar"></i>
+              <i class="fas fa-cubes"></i>
             </span>
-            <span>Model Outputs</span>
+            <span>Models</span>
           </a>
         </span>
+
+        <!-- Data link -->
+        <span class="link-block">
+          <a href="https://huggingface.co/collections/haritzpuerto/controllable-reasoning-models-datasets" target="_blank"
+          class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fas fa-database"></i>
+          </span>
+          <span>Data</span>
+        </a>
+      </span>
             </div>
           </div>
         </div>
@@ -146,167 +121,243 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- TL;DR -->
+<section class="section hero is-light" style="padding-top: 2rem; padding-bottom: 2rem;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4 has-text-centered">TL;DR</h2>
+        <p class="is-size-5 has-text-centered">
+          Reasoning traces leak private data even when the model is explicitly told not to.
+          We treat this as a <strong>controllability</strong> problem: privacy directives are just instructions,
+          so we teach models to follow instructions <em>inside</em> the reasoning trace and decode the trace and
+          the answer with two different LoRA adapters (<strong>Staged Decoding</strong>).
+          This yields up to <strong>+20.9</strong> points in instruction following and <strong>+51.9</strong> points in privacy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/figure1.png" alt="Example of contextual information protected by a password" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
-      <h2 class="subtitle has-text-centered">
-        Example of contextual information protected by a password. Despite explicit instruction, current reasoning models often reproduce both the confidential information and the password in their reasoning traces. The output in green shows the desired behavior, and text in red represents data leaks.
+      <img src="static/images/figure1.png" alt="A reasoning model reproduces the confidential information and the password in its reasoning trace despite an explicit privacy directive; a controllable model does not." style="width: 100%; max-width: 720px; margin: 0 auto; display: block;">
+      <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+        LRMs leak sensitive context into their reasoning trace despite instructions. Our method enforces
+        instruction following throughout reasoning, reducing trace leakage while preserving final-answer compliance.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+
+<!-- Motivation -->
+<section class="section hero is-small">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">The reasoning trace is an attack surface</h2>
         <div class="content has-text-justified">
           <p>
-            Reasoning traces produced by reasoning models are difficult to control, which can lead to the unintended disclosure of private information even when models are explicitly instructed to avoid it. We propose training models to follow instructions not only in the final answer, but also in reasoning traces, potentially under different constraints. We further introduce a generation strategy that decouples reasoning and answer generation using separate LoRA adapters. To demonstrate this idea, we fine-tune models on a new instruction-following dataset with explicit restrictions on reasoning traces. We evaluate our approach on six models from two model families, ranging from 1.7B to 14B parameters, across two instruction-following benchmarks and two privacy benchmarks. Our method yields substantial improvements, achieving gains of up to 25.5 points in instruction-following performance and up to 50.3 percentage points on privacy benchmarks. These improvements, however, can come at the cost of task utility, due to the trade-off between reasoning performance and instruction-following abilities. Overall, our results show that improving instruction-following behavior in reasoning models can significantly enhance privacy, suggesting a promising direction for the development of future privacy-aware agents.
+            The reasoning trace (RT) is usually treated as a hidden scratchpad and therefore assumed safe. It is not:
+            a simple prompt injection can force the model to reproduce its RT in the visible answer
+            (<a href="https://aclanthology.org/2025.emnlp-main.1347/" target="_blank">Green et al., 2025</a>).
+            And LRMs routinely ignore explicit privacy directives while reasoning, with reported violation rates of 19–78%(<a href="https://aclanthology.org/2025.emnlp-main.1347/" target="_blank">Green et al., 2025</a>).
+          </p>
+          <p>
+            Prior work on instruction following (IF) in reasoning models looks almost exclusively at the
+            <em>final answer</em> (FA). Nobody had asked whether IF can be improved <em>within</em> the reasoning process,
+            or whether such gains transfer to privacy. That is the gap we fill.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
 
-<!-- Method Overview -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Method: Staged Decoding</h2>
-      <div class="columns is-centered">
-        <div class="column is-two-thirds">
-          <img src="static/images/figure2.png" alt="Staged Decoding generates the thinking tokens with one LoRA adapter while the final answer is generated with a different LoRA adapter" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
-          <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-            Staged Decoding generates the thinking tokens with one LoRA adapter while the final answer is generated with a different LoRA adapter.
-          </h2>
-          <div class="content has-text-justified" style="margin-top: 2rem;">
-            <p>
-              To maximize instruction following performance in both reasoning traces (RTs) and final answers (FAs), we introduce <strong>Staged Decoding</strong>. This decoding strategy separates the generation process into two stages:
-            </p>
-            <ol>
-              <li><strong>Generating the RT</strong> using a LoRA adapter fine-tuned for instruction-following in reasoning traces (IF-RT)</li>
-              <li><strong>Generating the final answer</strong> using LoRA weights optimized for instruction-following in final answers (IF-FA)</li>
-            </ol>
-            <p>
-              This design equips the model with parameters optimized for instruction following in each respective stage. Moreover, Staged Decoding is time-efficient: the overhead of halting generation at the end-of-thinking token, unloading the LoRA weights, loading the new weights, and resuming decoding is negligible in modern LLM inference frameworks.
-            </p>
-          </div>
+<!-- Method -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>1. An SFT dataset for reasoning-trace instructions.</strong> We rewrite DeepSeek-R1 reasoning traces
+            on GSM8K so that they obey a sampled instruction of three <em>privacy-free</em> kinds:
+            <em>formatting</em> (e.g., write the RT as a bullet plan), <em>style</em> (e.g., reason in the voice of a given character),
+            and <em>reasoning type</em> (e.g., use deductive reasoning). We build three nested datasets (1k / 2k / 3k examples)
+            targeting the RT, the FA, or both, and train LoRA adapters on each.
+            Because the training instructions contain no privacy content, any privacy gain must come from better general instruction following.
+          </p>
+          <p>
+            <strong>2. Staged Decoding.</strong> The checkpoint that is best at IF in the RT is generally not the one best at IF in the FA.
+            Staged Decoding sidesteps that tension: generate the RT with the IF-RT adapter, swap adapters at the
+            end-of-thinking token, and generate the answer with the IF-FA adapter. The swap is cheap (+0.10% of end-to-end decoding time) and requires no retraining.
+          </p>
         </div>
+        <img src="static/images/figure2.png" alt="Staged Decoding generates the reasoning trace with one LoRA adapter and the final answer with another, swapping at the end-of-thinking token." style="width: 100%; max-width: 720px; margin: 1rem auto 0 auto; display: block;">
+        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+          Staged Decoding generates the reasoning trace and the final answer with different LoRA adapters.
+        </h2>
       </div>
     </div>
   </div>
 </section>
-<!-- End method overview -->
-
-
-
-
-<!-- Key Contributions -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Key Contributions</h2>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <ul>
-              <li><strong>First training dataset</strong> with diverse instructions about how to conduct the reasoning of Large Reasoning Models (LRMs) to improve the controllability of reasoning models.</li>
-              <li><strong>Staged Decoding</strong>, a decoding strategy that maximizes the instruction following performance of each part of the model generation (reasoning traces and final answers).</li>
-              <li><strong>Empirical demonstration</strong> that stronger instruction following abilities improve the privacy of the thinking process of LRMs, with privacy gains of up to 50.3 percentage points.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End key contributions -->
 
 
 <!-- Results -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Results</h2>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <h3 class="title is-4">Instruction-Following Performance</h3>
-            <p>
-              We evaluate instruction-following (IF) performance for both reasoning traces (RTs) and final answers (FAs) on two IF benchmarks: IFEval and Math-IF. Our proposed <strong>Staged Decoding</strong> consistently achieves the best of both worlds, attaining the highest IF-RT performance and the highest IF-FA performance in 6 out of 10 cases. When considering the average IF score (mean of IF-RT and IF-FA), Staged Decoding outperforms all variants in every setting, with absolute gains over the (untrained) baseline ranging from 1.92 to 25.25 points.
-            </p>
-            
-            <h3 class="title is-4">Privacy Improvements</h3>
-            <p>
-              More controllable LRMs, i.e., models with strong instruction-following capabilities in both RTs and FAs, exhibit improved contextual privacy. Staged Decoding achieves the best privacy results in seven of the ten evaluated setups. Specifically, it substantially outperforms the baseline, with average privacy gains of 23.23 points in Password Eval and 22.06 points in PEEP, with a maximum gain of 50.31 points (Qwen 3 14B on Password Eval).
-            </p>
-            
-            <h3 class="title is-4">Trade-offs with Task Utility</h3>
-            <p>
-              Consistent with prior work, we observe a trade-off between reasoning performance and instruction-following abilities. Our results show that improved instruction following can reduce utility on complex reasoning tasks, particularly on MathIF. However, on PasswordEval, where utility is closely tied to correctly following instructions, checkpoints with improved instruction-following capabilities consistently achieve higher utility than the baseline.
-            </p>
-            
-            <p>
-              <strong>Models Evaluated:</strong> Six models from two model families (Qwen 3 and Phi-4), ranging from 1.7B to 14B parameters.
-            </p>
-          </div>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate six models from two families (Qwen 3 and Phi 4, 1.7B–14B) on two IF benchmarks
+            (IFEval, MathIF) and two privacy benchmarks (PasswordEval, PEEP), with two seeds each.
+          </p>
+          <p>
+            <strong>Staged Decoding gets the best of both worlds.</strong> It keeps the IF-RT performance of the
+            RT-specialized checkpoint while recovering its lost IF-FA, reaching the best average IF in 9 of 12 cases,
+            with gains over the untrained baseline of up to <strong>20.9</strong> points
+            (+6.66 on IFEval and +10.74 on MathIF on average).
+          </p>
+          <p>
+            <strong>Better instruction following means better privacy.</strong> Staged Decoding gives the best privacy
+            in 10 of 12 setups, averaging <strong>+21.7</strong> points on PasswordEval and <strong>+22.7</strong> on PEEP,
+            with a maximum gain of <strong>51.9</strong> points (Qwen 3 14B on PasswordEval). A per-instance paired
+            analysis restricted to well-formed outputs (paired bootstrap 95% CI, B = 20,000, and a two-sided paired
+            permutation test with Holm correction) confirms a significant privacy improvement in 11 of 12 settings;
+            the sole exception is Qwen 3 1.7B on PasswordEval, the smallest model.
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="table is-fullwidth is-narrow is-hoverable">
+            <caption class="has-text-centered is-size-7" style="caption-side: bottom; padding-top: 0.5rem;">
+              Total privacy score (higher is better), baseline vs. Staged Decoding.
+            </caption>
+            <thead>
+              <tr>
+                <th rowspan="2" style="vertical-align: bottom;">Model</th>
+                <th colspan="3" class="has-text-centered">PasswordEval</th>
+                <th colspan="3" class="has-text-centered">PEEP</th>
+              </tr>
+              <tr>
+                <th class="has-text-centered">Base</th>
+                <th class="has-text-centered">Staged</th>
+                <th class="has-text-centered">&Delta;</th>
+                <th class="has-text-centered">Base</th>
+                <th class="has-text-centered">Staged</th>
+                <th class="has-text-centered">&Delta;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Qwen 3 1.7B</td>
+                <td class="has-text-centered">42.1</td><td class="has-text-centered">22.6</td><td class="has-text-centered">&minus;19.5</td>
+                <td class="has-text-centered">35.1</td><td class="has-text-centered">43.4</td><td class="has-text-centered">+8.3</td>
+              </tr>
+              <tr>
+                <td>Qwen 3 4B</td>
+                <td class="has-text-centered">41.2</td><td class="has-text-centered">54.1</td><td class="has-text-centered">+13.0</td>
+                <td class="has-text-centered">46.1</td><td class="has-text-centered">67.0</td><td class="has-text-centered">+20.9</td>
+              </tr>
+              <tr>
+                <td>Qwen 3 8B</td>
+                <td class="has-text-centered">41.1</td><td class="has-text-centered">85.1</td><td class="has-text-centered">+44.0</td>
+                <td class="has-text-centered">52.5</td><td class="has-text-centered">65.7</td><td class="has-text-centered">+13.2</td>
+              </tr>
+              <tr>
+                <td>Qwen 3 14B</td>
+                <td class="has-text-centered">41.2</td><td class="has-text-centered">93.1</td><td class="has-text-centered">+51.9</td>
+                <td class="has-text-centered">56.4</td><td class="has-text-centered">87.9</td><td class="has-text-centered">+31.5</td>
+              </tr>
+              <tr>
+                <td>Phi 4 3.8B</td>
+                <td class="has-text-centered">27.1</td><td class="has-text-centered">51.7</td><td class="has-text-centered">+24.5</td>
+                <td class="has-text-centered">40.0</td><td class="has-text-centered">74.0</td><td class="has-text-centered">+34.0</td>
+              </tr>
+              <tr>
+                <td>Phi 4 14B</td>
+                <td class="has-text-centered">74.4</td><td class="has-text-centered">90.4</td><td class="has-text-centered">+16.0</td>
+                <td class="has-text-centered">48.5</td><td class="has-text-centered">76.8</td><td class="has-text-centered">+28.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            <strong>The trade-off is real.</strong> Consistent with prior work, stronger instruction following can cost
+            reasoning utility: on MathIF the baseline beats Staged Decoding, and IF-RT correlates with utility at
+            &minus;0.65. On the privacy benchmarks the picture is milder, with weak and non-significant correlations
+            (&minus;0.33 on PasswordEval, &minus;0.24 on PEEP). Against RANA, the post-hoc anonymization upper bound,
+            Staged Decoding loses less utility in five of six models on PasswordEval and matches or recovers the baseline
+            utility in four. We attribute the remaining drop largely to the small, GSM8K-only training set.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End results -->
 
 
-
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{your-paper,
-  title={Controllable Reasoning Models Are Private Thinkers},
-  author={First Author and Second Author and Third Author},
-  booktitle={Conference/Venue},
-  year={2025}
-}</code></pre>
+<!-- Takeaways -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Takeaways</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>Privacy leakage in reasoning traces is, at root, an <strong>instruction-following failure</strong>. Fixing IF inside the trace fixes the cause, not the symptom.</li>
+            <li>Training on <strong>privacy-free</strong> instructions transfers to privacy benchmarks, so the gains are not overfitting to one leakage formulation.</li>
+            <li><strong>Staged Decoding</strong> resolves the tension between IF in the trace and IF in the answer at negligible cost.</li>
+            <li>Our approach is <strong>complementary</strong> to post-hoc anonymization, hiding traces, and prompt-injection defenses, and targets model providers rather than API consumers.</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
 
-  <footer class="footer">
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{puerto2026leakythoughts,
+      title={From Leaky Thoughts to Private Reasoning: Controlling What LRMs Say to Themselves},
+      author={Haritz Puerto and Haonan Li and Xudong Han and Timothy Baldwin and Iryna Gurevych},
+      year={2026},
+      eprint={2602.24210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.24210},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>

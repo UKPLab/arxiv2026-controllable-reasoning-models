@@ -1,10 +1,6 @@
-# This template is a low-dependency template. 
-# By default there is no requirements added here.
-# Add the requirements you need to this file.
-# or run `make init` to create this file automatically based on the template.
-# You can also run `make switch-to-poetry` to use the poetry package manager.
 torch
 vllm
+bitsandbytes>=0.48.1
 datasets
 tqdm
 jsonlines
@@ -15,9 +11,14 @@ langdetect
 nltk
 immutabledict
 unsloth
+numpy
 num2words
 matplotlib
+peft
 scikit-learn
+scipy
+statsmodels
+transformers
 trl
 weave
 langid

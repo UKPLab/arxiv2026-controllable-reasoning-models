@@ -84,8 +84,15 @@ def main():
                              help='Dataset split to use for HF datasets (default: test)')
     dataset_group.add_argument("--use-in-context-learning", action="store_true",
                              help='Whether to use in-context learning (ICL) with demonstrations')
-    
-    
+
+    # Prompt-injection attack (Green et al., 2025)
+    attack_group = parser.add_argument_group("Prompt-injection attack")
+    attack_group.add_argument("--prompt-injection", type=str, default=None,
+                             help='Inline prompt-injection text appended to the final user turn (Green et al., 2025 RT-extraction attack). Only applies to --dataset hf.')
+    attack_group.add_argument("--prompt-injection-file", type=str, default=None,
+                             help='Path to a file with the prompt-injection text (e.g., data/attacks/green_et_al_injection.txt). Overridden by --prompt-injection if both are given.')
+
+
     args = parser.parse_args()
     
     try:

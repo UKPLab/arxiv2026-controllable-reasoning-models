@@ -4,6 +4,7 @@ logs/
 unsloth_compiled_cache/
 wandb/
 jobs/
+runs/
 
 # MacOS
 .DS_Store
@@ -140,3 +141,6 @@ dmypy.json
 
 # templates
 .github/templates/*
+
+# Large downloaded model outputs (haritzpuerto/controlling-reasoning-models-privacy-outputs, ~6.9GB)
+data/privacy_outputs/
